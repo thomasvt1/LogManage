@@ -57,6 +57,7 @@ public class Logmanage extends JavaPlugin implements Listener {
 					}
 				}, 0, time);
 	}
+
 	public void configCheck() {
 		File file = new File(getDataFolder() + File.separator + "config.yml");
 		if (!file.exists()) {
@@ -64,6 +65,7 @@ public class Logmanage extends JavaPlugin implements Listener {
 			reloadConfig();
 		}
 	}
+
 	public void loadConfiguration() {
 		getConfig().options().copyDefaults(true);
 		saveConfig();
