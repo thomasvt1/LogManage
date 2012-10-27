@@ -1,0 +1,23 @@
+name: LogManage
+main: me.thomasvt.Logmanage.Logmanage
+version: 1.3.2
+author: Thomasvt
+
+commands:
+   logmanagereload:
+      description: Reload the Config.yml
+      permission: logmanage.reload
+   logdelete:
+      description: Delete log file upon server shutdown.
+      permission: logmanage.delete
+   logclear:
+      description: Cleares the log file.
+      aliases: [lc,clearlog]
+      permission: logmanage.clear
+   aboutlogmanage:
+      description: About LogManage.
+      default: true
+   logmanage:
+      description: About LogManage.
+      aliases: lm
+      default: true
